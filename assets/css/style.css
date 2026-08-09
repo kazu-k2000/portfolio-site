@@ -13,6 +13,7 @@
     --primary-white: #fbfbfb;
     --primary-black: #1a1a1a;
     --btn-blue: #334B78;
+    --back-blue: #6C8AA6;
 
     --content-width: 88%;
     --content-padding: 5.8%;
@@ -27,12 +28,17 @@ body {
     font-style: normal;
     color: var(--primary-black, #1a1a1a);
     background-color: var(--primary-white, #fbfbfb);
-    line-height: 1.5;
+    line-height: 1.6;
+    font-size: 1.5rem;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.section {
+    padding: 30px 0;
 }
 
 .section-title {
@@ -129,3 +135,28 @@ img {
 /*  */
 /* about */
 /*  */
+
+.about {
+    background-color: var(--back-blue);
+    color: var(--primary-white);
+}
+
+.about__name-en {
+    font-family: Geist;
+    font-size: 1.4rem;
+    margin-top: 14px;
+    line-height: 1;
+}
+
+.about__name-ja {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.about__text {
+    margin-top: 14px;
+}
+
+.about__text + .about__text {
+    margin-top: 20px;
+}
