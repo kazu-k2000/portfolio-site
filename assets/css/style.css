@@ -1,2 +1,131 @@
 @charset "utf-8";
+/*  */
 /* common */
+/*  */
+
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
+:root {
+    --primary-white: #fbfbfb;
+    --primary-black: #1a1a1a;
+    --btn-blue: #334B78;
+
+    --content-width: 88%;
+    --content-padding: 5.8%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IBM Plex Sans JP','Geist',sans-serif;
+    font-style: normal;
+    color: var(--primary-black, #1a1a1a);
+    background-color: var(--primary-white, #fbfbfb);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-title {
+    font-family: 'Geist';
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-title-sub {
+    font-family: 'IBM Plex Sans JP';
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 6px;
+}
+
+.btn {
+    display: block;
+    color: var(--primary-white);
+    text-align: center;
+    border-radius: 6px;
+    background: var(--btn-blue);
+    padding: 12px 46px 12px 30px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    transition: 0.4s;
+
+    width: 150px;
+    height: 42px;
+    margin-left: auto;
+}
+
+.btn::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/arrow.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn:hover {
+    opacity: 0.4s;
+}
+
+.inner {
+    padding: 0 24px;
+}
+
+/*  */
+/* fv */
+/*  */
+
+/*  */
+/* works */
+/*  */
+.works__title {
+    background: linear-gradient(90deg, #002453, #75A1DB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.works__name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.works__txt {
+    font-size: 1.5rem;
+    margin-top: 12px;
+}
+
+.works__skill {
+    color: #888;
+    font-family: 'Geist';
+    font-size: 1.2rem;
+}
+
+.works__btn {
+    margin-top: 22px;
+}
+
+/*  */
+/* about */
+/*  */
