@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*  */
+/* main */
+/*  */
+.main {
+    background-color: #DDE3EA;
+}
+
+.works-page__title {
+    /* color: #fbfbfb; */
+
+    font-family: "Geist";
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.works-page__title-sub {
+    font-size: 1.8rem;
+    font-weight: 700;
+}

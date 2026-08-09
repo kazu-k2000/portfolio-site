@@ -13,7 +13,6 @@
     --primary-white: #fbfbfb;
     --primary-black: #1a1a1a;
     --btn-blue: #334B78;
-    --back-blue: #6C8AA6;
 
     --content-width: 88%;
     --content-padding: 5.8%;
@@ -61,7 +60,7 @@ img {
     text-align: center;
     border-radius: 6px;
     background: var(--btn-blue);
-    padding: 12px 46px 12px 30px;
+    padding: 15px 48px 0 30px;
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1;
@@ -83,7 +82,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    right: 32px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -95,6 +94,10 @@ img {
 .inner {
     padding: 0 24px;
 }
+
+/*  */
+/* header */
+/*  */
 
 /*  */
 /* fv */
@@ -137,7 +140,7 @@ img {
 /*  */
 
 .about {
-    background-color: var(--back-blue);
+    background-color: #6C8AA6;
     color: var(--primary-white);
 }
 
@@ -159,4 +162,58 @@ img {
 
 .about__text + .about__text {
     margin-top: 20px;
+}
+
+/*  */
+/* contact */
+/*  */
+.contact {
+    background-color: #263D57;
+    color: var(--primary-white);
+}
+
+.contact__content {
+    margin-top: 20px;
+}
+
+.contact__mail {
+    display: block;
+    margin-top: 10px;
+}
+
+/*  */
+/* footer-main */
+/*  */
+.footer-main {
+    font-family: 'Geist';
+    background-color: #142941;
+    color: var(--primary-white);
+    padding-top: 30px;
+}
+
+.footer-main__logo {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.footer-main__list {
+    margin-top: 30px;
+}
+
+.footer-main__item {
+    font-family: 'Geist';
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.footer-main__item + .footer-main__item {
+    margin-top: 10px;
+}
+
+.footer-main__copy {
+    display: block;
+    text-align: center;
+    margin: 40px auto 0;
+    padding-bottom: 20px;
 }
