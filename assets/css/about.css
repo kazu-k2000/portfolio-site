@@ -4,10 +4,10 @@
 /* main */
 /*  */
 .main {
-    background-color: #DDE3EA;
+    background-color: #fbfbfb;
 }
 
-.works-page__title {
+.about-page__title {
     /* color: #fbfbfb; */
     
     font-family: "Geist";
@@ -17,37 +17,49 @@
     line-height: normal;
 }
 
-.works-page__title-sub {
+.about-page__title-sub {
     font-size: 1.8rem;
     font-weight: 700;
 }
 
-.works-page {
-    padding-bottom: 30px;
-    margin-top: 40px;
-    padding-bottom: 40px;
-}
-.works-page__top-img-content {
-    background-color: #fbfbfb;
-    border-radius: 10px;
+.career__name-en {
+    font-family: 'Geist';
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-top: 20px;
 }
 
-.works-page__text-content {
-    background-color: #fbfbfb;
-    border-radius: 10px;
-    margin-top: 30px;
-}
-
-.works-page__work-name {
-    font-size: 1.8rem;
+.career__name-ja {
+    font-size: 2.4rem;
     font-weight: 700;
 }
 
-.works-page__info-item dt  {
-    font-weight: 700;
-    margin-top: 30px;
+.career__text {
+    margin-top: 20px;
 }
 
-.works-page-inner {
-    padding: 40px 20px;
+.career__text-item + .career__text-item {
+    margin-top: 18px;
+}
+
+.career__timeline {
+    margin-top: 50px;
+}
+
+.career__timeline-item {
+    display: flex;
+}
+
+.career__timeline-item + .career__timeline-item {
+    margin-top: 24px;
+}
+
+.career__timeline-year {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: 34px;
+}
+
+.strengths {
+    margin-top: 50px;
 }
