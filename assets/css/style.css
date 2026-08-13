@@ -95,6 +95,33 @@ img {
     padding: 0 24px;
 }
 
+/* common pc */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    .section {
+        padding: 100px 0;
+    }
+
+    .section-title {
+        font-size: 6rem;
+    }
+
+    .section-title-sub {
+        font-size: 3rem;
+        margin-left: 8px;
+    }
+
+    /* btn */
+
+    .inner {
+        padding: 0 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
 /*  */
 /* header */
 /*  */
@@ -135,10 +162,36 @@ img {
     margin-top: 22px;
 }
 
+@media screen and (min-width: 768px) {
+    .works__content {
+        display: flex;
+        margin-top: 80px;
+
+        /* gap: 80px; */
+    }
+
+    .works__name {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .works__txt {
+        font-size: 1.5rem;
+        margin-top: 12px;
+    }
+
+    .works__skill {
+        font-size: 1.4rem;
+    }
+
+    .works__btn {
+        margin-top: auto;
+    }
+}
+
 /*  */
 /* about */
 /*  */
-
 .about {
     background-color: #6C8AA6;
     color: var(--primary-white);
@@ -164,6 +217,29 @@ img {
     margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+    .about__content {
+        display: flex;
+    }
+
+    .about__name-en {
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+
+    .about__name-ja {
+        font-size: 3rem;
+    }
+
+    .about__text {
+        margin-top: 26px;
+    }
+
+    .about__text + .about__text {
+        margin-top: 14px;
+    }
+}
+
 /*  */
 /* contact */
 /*  */
@@ -179,6 +255,12 @@ img {
 .contact__mail {
     display: block;
     margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact__content {
+        margin-top: 60px;
+    }
 }
 
 /*  */
@@ -216,4 +298,39 @@ img {
     text-align: center;
     margin: 40px auto 0;
     padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-main {
+        padding-top: 100px;
+    }
+
+    .footer-main__logo-list-content {
+        display: flex;
+    }
+
+    .footer-main__logo {
+        font-size: 6rem;
+    }
+
+    .footer-main__list {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .footer-main__item {
+        font-family: 'Geist';
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+
+    .footer-main__item + .footer-main__item {
+        margin-top: 0px;
+    }
+
+    .footer-main__copy {
+        margin-top: 80px;
+        text-align: end;
+    }
 }
