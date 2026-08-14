@@ -22,10 +22,28 @@
     font-weight: 700;
 }
 
+.section-title:not(.contact__title) {
+    background: linear-gradient(90deg, #002453, #75A1DB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .about-pag pc */
+@media screen and (min-width: 768px) {
+    .about-page__title {
+        font-size: 8rem;
+    }
+
+    .about-page__title-sub {
+        font-size: 4rem;
+    }
+}
+
 /*  */
 /* career */
 /*  */
-
 .career__name-en {
     font-family: 'Geist';
     font-size: 1.4rem;
@@ -64,22 +82,52 @@
     margin-right: 34px;
 }
 
-.strengths {
-    margin-top: 50px;
-    background-color: #E6EDF2;
-}
+/* .career PC */
+@media screen and (min-width: 768px) {
+    .career__content {
+        display: flex;
+    }
 
-.section-title:not(.contact__title) {
-    background: linear-gradient(90deg, #002453, #75A1DB);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+    .career__name-en {
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+
+    .career__name-ja {
+        font-size: 3rem;
+    }
+
+    .career__text {
+        margin-top: 30px;
+    }
+
+    .career__text-item + .career__text-item {
+        margin-top: 20px;
+    }
+
+    .career__timeline {
+        margin-top: 100px;
+        width: 700px;
+        margin: 100px auto 0;
+    }
+
+    .career__timeline-item + .career__timeline-item {
+        margin-top: 56px;
+    }
+
+    .career__timeline-year {
+        margin-right: 116px;
+    }
 }
 
 /*  */
 /* strengths */
 /*  */
+.strengths {
+    margin-top: 50px;
+    background-color: #E6EDF2;
+}
+
 .strengths__list {
     margin-top: 50px;
 }
@@ -119,6 +167,48 @@
     margin-top: 2px;
 }
 
+/* .strengths PC */
+@media screen and (min-width: 768px) {
+    .strengths {
+        margin-top: 0px;
+    }
+
+    .strengths__list {
+        margin-top: 80px;
+
+        display: flex;
+        gap: 30px;
+    }
+
+    .strengths__item {
+        border-radius: 10px;
+    }
+
+    .strengths__item span {
+        font-size: 4rem;
+
+        background: linear-gradient(90deg, #002453, #75A1DB);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .strengths__item h4 {
+        font-size: 2.4rem;
+
+        background: linear-gradient(90deg, #002453, #75A1DB);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .strengths__item p {
+        margin-top: 12px;
+    }
+}
+
 /*  */
 /* interests */
 /*  */
@@ -135,8 +225,20 @@
     margin-top: 6px;
 }
 
+/* .interests PC */
+@media screen and (min-width: 768px) {
+    .interests__list {
+        margin-top: 80px;
+        display: flex;
+        gap: 38px;
+    }
+
+    .interests__item h4 {
+        font-weight: 700;
+        margin-top: 20px;
+    }
+}
+
 /*  */
 /* gallery */
 /*  */
-
-/* フッターのコンタクトにもグラデーションがかかっているのを直す。 */
