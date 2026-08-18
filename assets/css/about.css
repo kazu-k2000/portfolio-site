@@ -86,6 +86,7 @@
 @media screen and (min-width: 768px) {
     .career__content {
         display: flex;
+        gap: 60px;
     }
 
     .career__name-en {
@@ -118,6 +119,11 @@
     .career__timeline-year {
         margin-right: 116px;
     }
+
+    .career__img {
+        width: 480px;
+        height: 380px;
+    }
 }
 
 /*  */
@@ -137,6 +143,8 @@
     border-radius: 6px;
 
     padding: 30px;
+
+    margin-top: 50px;
 }
 
 .strengths__item span {
@@ -156,6 +164,8 @@
     font-weight: 700;
     text-align: center;
 
+    margin-top: 16px;
+
     background: linear-gradient(90deg, #002453, #75A1DB);
     background-clip: text;
     -webkit-background-clip: text;
@@ -166,6 +176,11 @@
 .strengths__item p {
     margin-top: 2px;
 }
+
+.strengths__item img {
+        display: block;
+        margin: 0 auto;
+    }
 
 /* .strengths PC */
 @media screen and (min-width: 768px) {
@@ -182,30 +197,22 @@
 
     .strengths__item {
         border-radius: 10px;
+
+        margin-top: 0;
     }
 
     .strengths__item span {
         font-size: 4rem;
-
-        background: linear-gradient(90deg, #002453, #75A1DB);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
     }
 
     .strengths__item h4 {
         font-size: 2.4rem;
 
-        background: linear-gradient(90deg, #002453, #75A1DB);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
+        margin-top: 26px;
     }
 
     .strengths__item p {
-        margin-top: 12px;
+        margin-top: 8px;
     }
 }
 
@@ -213,6 +220,10 @@
 /* interests */
 /*  */
 .interests__list {
+    margin-top: 30px;
+}
+
+.interests__item + .interests__item{
     margin-top: 30px;
 }
 
@@ -231,6 +242,10 @@
         margin-top: 80px;
         display: flex;
         gap: 38px;
+    }
+
+    .interests__item + .interests__item{
+        margin-top: 0px;
     }
 
     .interests__item h4 {
