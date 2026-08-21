@@ -124,18 +124,167 @@ img {
         margin: 0 auto;
     }
 }
+
 /*  */
 /* header */
 /*  */
+.header__content {
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: "Geist";
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+@media screen and (min-width:769px) {
+    .header__content {
+        height: 80px;
+    }
+
+    .header__logo {
+        font-size: 3rem;
+        line-height: 32px;
+    }
+}
 
 /*  */
 /* nav */
 /*  */
+.nav {
+    background: rgba(14, 38, 65, 0.97);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.4s;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.nav__list {
+    margin: 0 auto;
+}
 
+.nav__item {
+    color: var(--primary-white);
+    font-family: "Geist";
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
 
+.nav__item + .nav__item {
+    margin-top: 40px;
+}
 
+/* .nav pc */
+@media screen and (min-width:769px) {
+    .nav {
+        background: var(--primary-white);
+        width: auto;
+        height: auto;
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+
+        display: block;
+        justify-content: normal;
+        align-items: normal;
+    }
+
+    .nav__list {
+        margin: 0;
+        
+        display: flex;
+    }
+
+    .nav__item {
+        color: var(--primary-black);
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .nav__item + .nav__item {
+        margin-top: 0;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+/* .nav active表示 */
+.nav.active {
+    transform: translateX(0);
+}
+
+#btn01.active span {
+    background-color: var(--primary-white);
+}
+
+body.is-menu-open {
+    overflow: hidden;
+}
+
+/* jsファイルを読み込む、変形するハンバーガーの実装～ */
+/* ハンバーガーボタン */
+.btn-trigger {
+  position: relative;
+  width: 34px;
+  height: 22px;
+  cursor: pointer;
+
+  z-index: 500;
+}
+.btn-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #444;
+  border-radius: 4px;
+}
+.btn-trigger, .btn-trigger span {
+  display: inline-block;
+  transition: all .5s;
+  box-sizing: border-box;
+}
+.btn-trigger span:nth-of-type(1) {
+  top: 3px;
+}
+.btn-trigger span:nth-of-type(2) {
+  bottom: 3px;
+}
+/* .btn-trigger span:nth-of-type(3) {
+  bottom: 0;
+} */
+
+/* 変形 */
+#btn01.active span:nth-of-type(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+#btn01.active span:nth-of-type(2) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+@media screen and (min-width:769px) {
+    .btn-trigger {
+        display: none;
+    }
+}
 
 /*  */
 /* fv */
