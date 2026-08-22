@@ -26,22 +26,29 @@
     <div class="container">
         <header class="header">
             <div class="inner inner--header">
-                <h1 class="header__logo"><a href="index.html">SATO<br>KAZUYUKI<br>PORTFORIO</a></h1>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html">HOME</a></li>
-                        <li class="nav__item"><a href="#works">WORKS</a></li>
-                        <li class="nav__item"><a href="#about">ABOUT</a></li>
-                        <li class="nav__item"><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </nav>
-                <!-- .menuBtn -->
-
-                <!-- .menuBtn -->
+                <div class="header__content">
+                    <h1 class="header__logo"><a href="index.html">SATO<br>KAZUYUKI</a></h1>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="index.html">HOME</a></li>
+                            <li class="nav__item"><a href="#works">WORKS</a></li>
+                            <li class="nav__item"><a href="#about">ABOUT</a></li>
+                            <li class="nav__item"><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <!-- .menuBtn -->
+                    <div class="btn-trigger" id="btn01">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- .menuBtn -->
+                </div>
             </div>
         </header>
         <main class="main">
-            <h2 class="about-page__title">ABOUT<span class="about-page__title-sub">自己紹介</span></h2>
+            <div class="inner inner--career">
+                <h2 class="page-title">ABOUT<span class="page-title-sub">自己紹介</span></h2>
+            </div>
             <section id="" class="career section">
                 <div class="inner inner--career">
                     <div class="career__content">
@@ -146,23 +153,27 @@
                     <h2 class="contact__title section-title">CONTACT<span class="contact__title-sub section-title-sub">お問い合わせ</span></h2>
                     <div class="contact__content">
                         <p class="contact__text">下記のメールアドレスにお願いいたします。</p>
-                        <a class="contact__mail" href="mailto:zucker.k2000@gmail.com">zucker.k2000@gmail.com</a>
+                        <a class="contact__mail" href="mailto:zucker.k2000@gmail.com">< zucker.k2000@gmail.com ></zucker.k2000></a>
                     </div>
                 </div>
             </section>
             <section class="footer-main">
                 <div class="inner inner--footer-main">
-                    <p class="footer-main__logo">SATO<br>KAZUYUKI</p>
-                    <ul class="footer-main__list">
-                        <li class="footer-main__item"><a href="index.html">HOME</a></li>
-                        <li class="footer-main__item"><a href="#works">WORKS</a></li>
-                        <li class="footer-main__item"><a href="#about">ABOUT</a></li>
-                        <li class="footer-main__item"><a href="#contact">CONTACT</a></li>
-                    </ul>
+                    <div class="footer-main__logo-list-content">
+                        <p class="footer-main__logo">SATO<br>KAZUYUKI</p>
+                        <ul class="footer-main__list">
+                            <li class="footer-main__item"><a href="index.html">HOME</a></li>
+                            <li class="footer-main__item"><a href="#works">WORKS</a></li>
+                            <li class="footer-main__item"><a href="#about">ABOUT</a></li>
+                            <li class="footer-main__item"><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
                     <small class="footer-main__copy">©2026 Kazuyuki Sato</small>
                 </div>
             </section>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

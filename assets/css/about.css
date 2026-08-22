@@ -7,19 +7,27 @@
     background-color: #fbfbfb;
 }
 
-.about-page__title {
-    /* color: #fbfbfb; */
-    
+.page-title {
     font-family: "Geist";
     font-size: 2.8rem;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1;
+
+    background: linear-gradient(90deg, #002453, #75A1DB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
-.about-page__title-sub {
+.page-title-sub {
     font-size: 1.8rem;
     font-weight: 700;
+    margin-left: 6px;
 }
 
 .section-title:not(.contact__title) {
@@ -32,18 +40,27 @@
 
 /* .about-pag pc */
 @media screen and (min-width: 768px) {
-    .about-page__title {
+    .page-title {
         font-size: 8rem;
+
+        padding-top: 50px;
+        margin-bottom: 50px;
     }
 
-    .about-page__title-sub {
+    .page-title-sub {
         font-size: 4rem;
+        margin-left: 8px;
     }
 }
 
 /*  */
 /* career */
 /*  */
+.career {
+    padding-top: 0;
+    margin-top: 50px;
+}
+
 .career__name-en {
     font-family: 'Geist';
     font-size: 1.4rem;
@@ -84,6 +101,10 @@
 
 /* .career PC */
 @media screen and (min-width: 768px) {
+    .career {
+        margin-top: 120px;
+    }
+
     .career__content {
         display: flex;
         gap: 60px;
